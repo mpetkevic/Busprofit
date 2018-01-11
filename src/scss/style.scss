@@ -1,0 +1,1467 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import url(bootstrap-grid.min.css);
+@import "build/font.scss";
+
+
+$PFDBold: 'PF Din Text Comp Pro Bold';
+$PFDMedium: 'PF Din Text Comp Pro Medium';
+$ProxyBold: 'Proxima Nova Rg';
+$ProxyLight: 'Proxima Nova Lt';
+$GreenBasic: #00824c;
+$OrangeBasic: #ff5a30;
+$GreyBasic: #e8e8e8;
+
+.clearfix {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.header {
+	max-width: 1920px;
+	width: 100%;
+	height: 790px;
+	background-image: url('../img/header_bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.container {
+		.row {
+			padding-top: 34px;
+			
+			.col-xl-4 {
+				height: 38px;
+
+				.logo {
+					display: block;
+					height: 38px;
+					margin: 0 auto;
+				}
+
+				.point {
+					float: left;
+					height: 38px;
+					margin-right: 30px;
+				}
+
+				span {
+					display: block;
+					color: white;
+					font-family: $ProxyLight;
+					font-size: 12px;
+					font-weight: 300;
+					
+				}
+
+				.bold {
+					display: block;
+					font-family: $ProxyBold;
+					font-size: 14px;
+					font-weight: 700;
+				}
+
+				.phone-pic {
+					float: right;
+					height: 38px;
+					margin-left: 30px;
+					transition: all 2s;
+					
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+
+				.green {
+					display: block;
+					text-align: right;
+					font-family: $ProxyLight;
+					font-size: 12px;
+					color: $GreenBasic;
+				}
+
+				.tel {
+					display: block;
+					text-align: right;
+					margin-top: 5px;
+					font-family: $ProxyBold;
+					font-size: 18px;
+					color: #ffffff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	h1 {
+		text-align: center;
+		color: lighten($GreenBasic, 20%);
+		font-family: $PFDMedium;
+		font-size: 66px;
+		text-transform: uppercase;
+		padding-top: 200px;
+	}
+
+	.header_green {
+		width: 515px;
+		margin: 30px auto;
+		text-align: center;
+		color: lighten($GreenBasic, 20%);
+		font-family: $PFDBold;
+		font-size: 29px;
+		text-transform: uppercase;
+		padding-top: 20px;
+	}
+
+	.header_descr {
+		width: 410px;
+		color: white;
+		text-align: center;
+		margin: 20px auto;
+		font-size: 20px;
+		font-family: $ProxyLight;
+
+		.descr_bold {
+			font-family: $ProxyBold;
+			font-size: 22px;
+		}
+	}
+
+	.arrow {
+		display: block;
+		margin: 0 auto;
+	
+	}
+
+}
+
+.block2 {
+	
+	height: 510px;
+	.container {
+		height: 100%;
+
+		.row {
+			margin: 100px 0;
+			height: 310px;
+
+			.col-xl-3 {
+				height: 100%;
+				//border: 1px solid black;
+				
+				img {
+					display: block;
+					margin: 0 auto;
+					width: 275px;
+				}
+			}
+
+			.col-xl-9 {
+				height: 100%;
+				padding-left: 15px;
+				//border: 1px solid black;
+
+				h2 {
+					font-family: $PFDMedium;
+					font-size: 30px;
+					color: $GreenBasic;
+					text-transform: uppercase;
+					padding-bottom: 44px;
+				}
+
+				#middle {
+					font-family: $PFDMedium;
+					font-size: 30px;
+					color: $GreenBasic;
+					text-transform: uppercase;
+					padding-bottom: 90px;
+				}
+
+				.descr {
+					width: 550px;
+					font-family: $ProxyLight;
+					font-size: 18px;
+					margin-bottom: 30px;
+
+					span {
+						font-family: $ProxyBold;
+					}
+				}
+
+				form {
+					label {
+						position: relative;
+
+						&.error {
+							color: red;
+							position: absolute; 
+							top: 185px;
+						}
+
+						
+					}
+					input {
+						width: 234px;
+						height: 60px;
+						outline: none;
+						border: 1px solid #dddddd;
+						padding-left: 25px;
+
+						&:nth-child(2) {
+							margin: 0 30px;
+						}
+
+						&::placeholder {
+							font-family: $ProxyLight;
+							color: black;
+							font-size: 14px;
+						}
+
+						&.error {
+							border: 1px solid red;
+						}
+					}
+
+					button {
+						width: 234px;
+						height: 60px;
+						border: none;
+						border-radius: 0px; 
+						background-color: $OrangeBasic;
+						text-transform: uppercase;
+						font-family: $PFDMedium;
+						font-size: 20px;
+						color: #ffffff;
+						cursor: pointer;
+						outline: none;
+					}
+
+				}
+
+				.small {
+					font-size: 12px;
+					font-family: $ProxyLight;
+					margin-top: 20px;
+				}
+
+			}
+			
+		}
+	}
+	.clearfix {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+}
+
+.seats {
+	height: 700px;
+	background-color: $GreenBasic;
+	color: #ffffff;
+
+	h2 {
+		
+		font-family: $PFDMedium;
+		font-size: 36px;
+		text-align: center;
+		padding-top: 95px;
+		padding-bottom: 100px;
+		text-transform: uppercase;
+	}
+
+	.container {
+		.row {
+			height: 375px;
+
+			.col-xl-6 {
+				height: 100%;
+
+				.seat_simple {
+					height: 187px;
+					
+					.simple {
+						float: left;
+						padding-top: 25px;
+						margin-right: 35px;
+					}
+
+					p {
+						font-family: $ProxyLight;
+						font-size: 20px;
+						padding-top: 65px;
+					}
+				}
+
+				.seat_example {
+					height: 187px;
+					
+					.example {
+						float: left;
+						padding-top: 25px;
+						margin-right: 35px;
+					}
+
+					p {
+						font-family: $ProxyLight;
+						font-size: 20px;
+						padding-top: 65px;
+					}
+				}
+
+				.seat {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
+.count-process {
+	.container {
+		h2 {
+			color: $GreenBasic;
+			font-family: $PFDMedium;
+			font-size: 36px;
+			text-align: center;
+			padding-top: 95px;
+			padding-bottom: 100px;
+			text-transform: uppercase;
+		}
+
+		.work {
+			height: 400px;
+			border: 5px solid #e8e8e8;
+			position: relative;
+
+			h5 {
+				position: absolute;
+				top: -3%;
+				left: 50%;
+				transform: translateX(-50%);
+				background: #ffffff;
+				padding: 0px 20px;
+				font-family: $PFDMedium;
+				font-size: 20px;
+
+			}
+
+			.col {
+				img {
+					display: block;
+					margin: 90px auto 0;
+				}
+
+				.green {
+					font-family: $PFDMedium;
+					font-size: 30px;
+					color: $GreenBasic;
+					text-align: center;
+					margin: 45px 0 35px;
+					text-transform: uppercase;
+				}
+
+				.descr {
+					font-family: $ProxyLight;
+					font-size: 16px;
+					text-align: center;
+				}
+			}
+
+			h3 {
+				position: absolute;
+				bottom: -7%;
+				left: 50%;
+				transform: translateX(-50%);
+				background: #ffffff;
+				padding: 0px 20px;
+				font-family: $PFDMedium;
+				font-size: 33px;
+				color: $OrangeBasic;
+				text-transform: uppercase;
+			}
+		}
+
+		.count {
+			margin: 85px 0 80px;
+			text-align: center;
+			font-family: $PFDMedium;
+			font-size: 20px;
+		}
+
+		.sum {
+			background: $OrangeBasic;
+
+			.grey {
+				background-image: url('../img/grey_triangle.png');
+				background-position: left center;
+				background-repeat: no-repeat;
+				height: 70px;
+
+				.descr_grey {
+					margin: 20px 0 20px 20px;
+					text-align: left;
+					font-family: $PFDMedium;
+					font-size: 30px;
+					text-transform: uppercase;
+
+					span {
+						font-family: $PFDBold;
+					}
+
+				}
+			}
+
+			.orange {
+				background: rgba($color: #000000, $alpha: 0.0);
+				height: 70px;
+				.descr_orange {
+					margin: 20px 20px 20px 0px;
+					text-align: right;
+					font-family: $PFDMedium;
+					font-size: 30px;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.count-prop {
+			height: 170px;
+			width: 872px;
+			margin: 0 auto 50px;
+			background-image: url('../img/hr.png');
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: flex;
+
+			.prop-descr {
+				width: 280px;
+				height: 100%;
+				//background: rgba($color: #f37777, $alpha: 0.2);
+
+				.bold {
+					font-family: $ProxyBold;
+					font-size: 16px;
+					padding-top: 60px;
+				}
+
+				.descr {
+					font-family: $ProxyLight;
+					font-size: 16px;
+					padding-top: 10px;
+				}
+
+			}
+
+			.prop-count {
+				display: flex;
+				width: 295px;
+				height: 100%;
+				background-image: url('../img/grey_elipse.png');
+				background-position: center right;
+				background-repeat: no-repeat;
+				justify-content: flex-end;
+				align-items: center;
+
+				p {
+					width: 175px;
+					text-align: center;
+					float: right;
+					//padding: 50px 20px;
+					font-family: $ProxyLight;
+					font-size: 16px;
+
+					span {
+						font-family: $ProxyBold;
+					}
+				}
+			}
+
+			.prop-sum {
+				display: flex;
+				width: 295px;
+				height: 100%;
+				background-image: url('../img/orange_elipse.png');
+				background-position: center right;
+				background-repeat: no-repeat;
+				justify-content: flex-end;
+				align-items: center;
+
+				p {
+					padding-right: 35px;
+					font-family: $PFDBold;
+					font-size: 24px;
+				}
+			}
+		}
+
+		.orange_sum {
+			display: flex;
+			width: 465px;
+			height: 60px;
+			background-color: $OrangeBasic;
+			justify-content: center;
+			align-self: flex-end;
+			float: right;
+			margin-right: 124px;
+			margin-bottom: 100px;
+
+			
+
+			span {
+				line-height: 60px;
+				color: #ffffff;
+				font-family: $PFDMedium;
+				font-size: 24px;
+			}
+		}
+
+		.clearfix {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+}
+
+.recoupment {
+	background-image: url('../img/recoupment.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.container {
+		.recoup_count {
+			padding-top: 100px;
+			padding-bottom: 90px;
+			//background: $GreenBasic;
+			.col-lg-4 {
+				height: 180px;
+				background: #ffffff;
+				border: 2px solid $GreenBasic;
+				margin: 0 15px;
+	
+				.bold {
+					text-align: center;
+					font-family: $ProxyBold;
+					font-size: 16px;
+					margin-top: 33px;
+				}
+	
+				.green {
+					text-align: center;
+					font-family: $PFDMedium;
+					font-size: 36px;
+					color: $GreenBasic;
+					margin: 25px 0 0;
+					text-transform: uppercase;
+				}
+	
+				.descr {
+					text-align: center;
+					font-family: $ProxyLight;
+					font-size: 16px;
+				}
+			}
+		}
+	
+		.recoup_green {
+			height: 100px;
+			padding: 0 30px;
+			margin-bottom: 30px;
+	
+			.col-8 {
+				display: flex;
+				height: 100%;
+				background-color: $GreyBasic;
+				align-items: center;
+				
+				p {
+					font-family: $ProxyBold;
+					font-size: 20px;
+					padding-left: 20px;
+				}
+			}
+	
+			.col-4 {
+				display: flex;
+				height: 100%;
+				background-color: $GreenBasic;
+				align-items: center;
+				justify-content: center;
+	
+				p {
+					font-family: $PFDBold;
+					font-size: 30px;
+					color: #ffffff;
+					text-transform: uppercase;
+				}
+				
+			}
+		}
+	
+		.recoup_orange {
+			height: 100px;
+			padding: 0 30px;
+			margin-bottom: 100px;
+	
+			.col-8 {
+				display: flex;
+				height: 100%;
+				background-color: $GreyBasic;
+				align-items: center;
+				
+				p {
+					font-family: $ProxyBold;
+					font-size: 20px;
+					padding-left: 20px;
+				}
+			}
+	
+			.col-4 {
+				display: flex;
+				height: 100%;
+				background-color: $OrangeBasic;
+				align-items: center;
+				justify-content: center;
+	
+				p {
+					font-family: $PFDBold;
+					font-size: 30px;
+					color: #ffffff;
+					text-transform: uppercase;
+				}
+				
+			}
+		}
+	}
+}
+
+.biz-process {
+	background-color: #f4f4f4;
+
+	.container {
+		h2 {
+			color: $GreenBasic;
+			font-family: $PFDMedium;
+			font-size: 36px;
+			text-align: center;
+			padding-top: 95px;
+			padding-bottom: 100px;
+			text-transform: uppercase;
+		}
+
+		.first {
+			padding-bottom: 60px;
+			.col-md-3 {
+				//margin: 0 15px;
+
+				img {
+					display: block;
+					margin: 0 auto;
+					width: 90%;
+				}
+
+				p {
+					text-align: center;
+					font-family: $ProxyLight;
+					font-size: 16px;
+					margin-top: 30px;
+				}
+			}
+		}
+
+		.second {
+			padding-bottom: 100px;
+			.col-md-3 {
+				//margin: 0 15px;
+
+				img {
+					display: block;
+					margin: 0 auto;
+					width: 90%;
+				}
+
+				p {
+					text-align: center;
+					font-family: $ProxyLight;
+					font-size: 16px;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
+.form-woman {
+	background-image: url('../img/woman.jpg');
+	background-repeat: no-repeat;
+	background-position: right 20% bottom;
+	.container {
+		h2 {
+			font-family: $PFDMedium;
+			font-size: 30px;
+			color: $GreenBasic;
+			text-transform: uppercase;
+			padding-top: 110px;
+			padding-bottom: 44px;
+		}
+
+		.descr {
+			width: 550px;
+			font-family: $ProxyLight;
+			font-size: 14px;
+			margin-bottom: 30px;
+
+			span {
+				font-family: $ProxyBold;
+			}
+		}
+
+		form {
+			input {
+				width: 234px;
+				height: 60px;
+				outline: none;
+				border: 1px solid #dddddd;
+				padding-left: 25px;
+
+				&:nth-child(2) {
+					margin: 0 30px;
+				}
+
+				&::placeholder {
+					font-family: $ProxyLight;
+					color: black;
+					font-size: 14px;
+				}
+			}
+
+			button {
+				width: 234px;
+				height: 60px;
+				border: none;
+				border-radius: 0px; 
+				background-color: $OrangeBasic;
+				text-transform: uppercase;
+				font-family: $PFDMedium;
+				font-size: 20px;
+				color: #ffffff;
+				cursor: pointer;
+				outline: none;
+			}
+
+		}
+
+		.small {
+			font-size: 12px;
+			font-family: $ProxyLight;
+			margin-top: 20px;
+		}
+
+		.small-span {
+			font-size: 12px;
+			font-family: $ProxyLight;
+			margin-top: 5px;
+			padding-bottom: 95px;
+
+			span {
+				font-family: $ProxyBold;
+				font-size: 16px;
+			}
+		}
+
+	}
+}
+
+.min-profit {
+	background-color: $GreenBasic;
+
+	.container {
+		h2 {
+			color: #ffffff;
+			font-family: $PFDMedium;
+			font-size: 36px;
+			text-align: center;
+			padding-top: 95px;
+			padding-bottom: 100px;
+			text-transform: uppercase;
+		}
+
+		.row {
+			padding-bottom: 100px;
+			.col-md-4 {
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+
+				p {
+					font-family: $ProxyLight;
+					font-size: 18px;
+					color: #ffffff;
+					text-align: center;
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
+
+.biz-enter {
+	background-image: url('../img/biz-enter_bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.container {
+		h2 {
+			color: #ffffff;
+			font-family: $PFDMedium;
+			font-size: 36px;
+			text-align: center;
+			padding-top: 95px;
+			padding-bottom: 100px;
+			text-transform: uppercase;
+		}
+
+		.row {
+			padding-bottom: 45px;
+			.col-md-4 {
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+
+				p {
+					font-family: $ProxyLight;
+					font-size: 18px;
+					color: #ffffff;
+					text-align: center;
+					margin-top: 40px;
+				}
+			}
+		}
+		.big-arrow {
+			width: 70%;
+			display: block;
+			margin: 0 auto 25px;
+		}
+
+		h6 {
+			color: #ffffff;
+			font-family: $ProxyBold;
+			font-size: 20px;
+			text-align: center;
+			padding-bottom: 100px;
+		}
+	}
+}
+
+.form-man {
+	background-image: url('../img/man.jpg');
+	background-repeat: no-repeat;
+	background-position: right 15% bottom;
+	.container {
+		h2 {
+			font-family: $PFDMedium;
+			font-size: 30px;
+			color: $GreenBasic;
+			text-transform: uppercase;
+			padding-top: 110px;
+			padding-bottom: 44px;
+		}
+
+		.descr {
+			width: 550px;
+			font-family: $ProxyLight;
+			font-size: 14px;
+			margin-bottom: 30px;
+
+			span {
+				font-family: $ProxyBold;
+			}
+		}
+
+		form {
+			input {
+				width: 234px;
+				height: 60px;
+				outline: none;
+				border: 1px solid #dddddd;
+				padding-left: 25px;
+
+				&:nth-child(2) {
+					margin: 0 30px;
+				}
+
+				&::placeholder {
+					font-family: $ProxyLight;
+					color: black;
+					font-size: 14px;
+				}
+			}
+
+			button {
+				width: 234px;
+				height: 60px;
+				border: none;
+				border-radius: 0px; 
+				background-color: $OrangeBasic;
+				text-transform: uppercase;
+				font-family: $PFDMedium;
+				font-size: 20px;
+				color: #ffffff;
+				cursor: pointer;
+				outline: none;
+			}
+
+		}
+
+		.small {
+			font-size: 12px;
+			font-family: $ProxyLight;
+			margin-top: 20px;
+		}
+
+		.small-span {
+			font-size: 12px;
+			font-family: $ProxyLight;
+			margin-top: 5px;
+			padding-bottom: 95px;
+
+			span {
+				font-family: $ProxyBold;
+				font-size: 16px;
+			}
+		}
+
+	}
+}
+
+.scales {
+	background-color: #f6f6f6;
+
+	.container {
+		h2 {
+			font-family: $PFDMedium;
+			font-size: 30px;
+			text-align: center;
+			color: $GreenBasic;
+			text-transform: uppercase;
+			padding-top: 110px;
+			padding-bottom: 44px;
+		}
+
+		.scales_p {
+			font-family: $ProxyLight;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.scales-prop {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: 150px;
+			border: 10px solid #ffffff;
+			margin: 100px 0;
+
+			.prop {
+				display: flex;
+				flex-grow: 1;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				
+				.units {
+					font-family: $ProxyLight;
+					font-size: 16px;
+					margin: 10px 0 25px;
+				}
+
+				.green {
+					font-family: $PFDBold;
+					font-size: 28px;
+					text-transform: uppercase;
+					color: $GreenBasic;
+				}
+
+				.orange {
+					font-family: $PFDBold;
+					font-size: 28px;
+					text-transform: uppercase;
+					color: $OrangeBasic;
+				}
+			}
+			
+		}
+
+		.row {
+			margin-top: 80px;
+			padding-bottom: 100px;
+
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+
+			p {
+				font-family: $ProxyLight;
+				font-size: 16px;
+				text-align: center;
+				margin-top: 40px;
+
+				span {
+					font-family: $ProxyBold;
+				}
+			}
+
+		}
+	}
+}
+.for-us {
+	background-color: $GreenBasic;
+	color: #ffffff;
+	.container {
+		h2 {
+			
+			font-family: $PFDMedium;
+			font-size: 36px;
+			text-align: center;
+			padding-top: 95px;
+			padding-bottom: 100px;
+			text-transform: uppercase;
+		}
+
+		.row {
+			padding-bottom: 100px;
+
+			.col-md-6 {
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+
+				.bold {
+					font-family: $ProxyBold;
+					font-family: 18px;
+					text-align: center;
+					margin: 75px 0 40px;
+				}
+
+				.descr {
+					font-family: $ProxyLight;
+					font-family: 16px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.advertising {
+	.container {
+		h2 {
+			font-family: $PFDMedium;
+			font-size: 30px;
+			text-align: center;
+			color: $GreenBasic;
+			text-transform: uppercase;
+			padding-top: 110px;
+			padding-bottom: 44px;
+		}
+
+		.advert_p {
+			font-family: $ProxyLight;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.row {
+			padding: 80px 0 100px;
+			.col {
+				margin: 0 15px;
+				padding: 45px 0 0 45px;
+			}
+
+			.white {
+				padding-top: 95px;
+				ul {
+					padding-bottom: 30px;
+					li {
+						list-style: none;
+						height: 30px;
+
+						span {
+							padding-left: 30px;
+							line-height: 30px;
+							display: inline-block;
+						}
+
+						&:nth-child(1) {
+							background-image: url('../img/voice-recorder.png');
+							background-position: center left 5px;
+							background-repeat: no-repeat;
+						}
+
+						&:nth-child(2) {
+							background-image: url('../img/television.png');
+							background-position: center left;
+							background-repeat: no-repeat;
+						}
+
+						&:nth-child(3) {
+							background-image: url('../img/bus.png');
+							background-position: center left;
+							background-repeat: no-repeat;
+						}
+
+						&:nth-child(4) {
+							background-image: url('../img/billboard.png');
+							background-position: center left;
+							background-repeat: no-repeat;
+						}
+
+						&:nth-child(5) {
+							background-image: url('../img/bshirt.png');
+							background-position: center left;
+							background-repeat: no-repeat;
+						}
+					}
+				}
+			}
+
+			.green {
+				border: 5px solid $GreenBasic;
+
+				p {
+					font-family: $ProxyBold;
+					color: $GreenBasic;
+					font-size: 15px;
+					margin-bottom: 30px;
+				}
+
+				ul {
+					padding-bottom: 30px;
+					li {
+						list-style: none;
+						height: 30px;
+
+						span {
+							font-family: $ProxyLight;
+							line-height: 30px;
+							display: inline-block;
+						}
+
+						.bold {
+							font-family: $ProxyBold;
+						}
+					}
+				}
+			}
+
+			.grey {
+				border: 5px solid $GreyBasic;
+
+				p {
+					font-family: $ProxyBold;
+					color: $GreenBasic;
+					font-size: 15px;
+					margin-bottom: 30px;
+				}
+
+				ul {
+					padding-bottom: 30px;
+					li {
+						list-style: none;
+						height: 30px;
+
+						span {
+							font-family: $ProxyLight;
+							line-height: 30px;
+							display: inline-block;
+						}
+
+						.bold {
+							font-family: $ProxyBold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.requiments {
+	background-image: url('../img/requimets-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	.container {
+		h2 {
+			
+			font-family: $PFDMedium;
+			font-size: 36px;
+			text-align: center;
+			padding-top: 95px;
+			padding-bottom: 100px;
+			text-transform: uppercase;
+		}
+
+		.row {
+			padding-bottom: 100px;
+			.col-md-3 {
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+
+				p {
+					font-family: $ProxyLight;
+					font-size: 16px;
+					text-align: center;
+					margin-top: 25px;
+				}
+			}
+		}
+	}
+}
+
+.help {
+	background-color: $GreenBasic;
+
+	.container {
+		h2 {
+			font-family: $PFDMedium;
+			font-size: 30px;
+			text-align: center;
+			color: #ffffff;
+			text-transform: uppercase;
+			padding-top: 110px;
+			padding-bottom: 44px;
+		}
+
+		.tel-form {
+			width: 600px;
+			height: 60px;
+			margin: 0 auto;
+
+			form {
+				input {
+					width: 268px;
+					height: 60px;
+					outline: none;
+					border: 1px solid #dddddd;
+					margin: 0 15px;
+					padding-left: 25px;
+
+					&::placeholder {
+						font-family: $ProxyLight;
+						color: black;
+						font-size: 14px;
+					}
+				}
+
+				button {
+					width: 268px;
+					height: 60px;
+					border: none;
+					border-radius: 0px; 
+					background-color: $OrangeBasic;
+					text-transform: uppercase;
+					font-family: $PFDMedium;
+					font-size: 20px;
+					color: #ffffff;
+					cursor: pointer;
+					outline: none;
+					margin: 0 15px;
+				}
+			}
+		}
+
+		.info {
+			font-family: $ProxyLight;
+			font-size: 16px;
+			text-align: center;
+			padding-top: 20px;
+			color: #ffffff;
+		}
+
+		.info-bold {
+			font-family: $ProxyLight;
+			font-size: 16px;
+			text-align: center;
+			padding-top: 20px;
+			color: #ffffff;
+			padding-bottom: 90px;
+			
+			span {
+				font-family: $ProxyBold;
+			}
+		}
+	}
+}
+
+.support {
+	.container {
+		display: flex;
+		.woman-foto {
+			display: inline-block;
+			height: 540px;
+			width: 340px;
+		}
+		.support-descr {
+			display: inline-block;
+			height: 540px;
+			width: 700px;
+			margin-left: 50px;
+
+			h2 {
+				font-family: $PFDMedium;
+				font-size: 30px;
+				text-align: left;
+				color: $GreenBasic;
+				text-transform: uppercase;
+				padding-top: 110px;
+				padding-bottom: 44px;
+			}
+
+			p {
+				font-family: $ProxyLight;
+				font-size: 18px;
+			}
+
+			.manager {
+				height: 70px;
+				margin: 85px 0 40px;
+				img {
+					float: left;
+					margin-right: 20px;
+				}
+				p {
+					padding-top: 13px;
+					font-family: $ProxyLight;
+					font-size: 18px;
+				}
+			}
+
+			.customer {
+				height: 70px;
+
+				img {
+					float: left;
+					margin-right: 20px;
+				}
+
+				p {
+					line-height: 70px;
+					font-family: $ProxyLight;
+					font-size: 18px;
+
+					span {
+						font-family: $ProxyBold;
+					}
+				}
+			}
+			
+		}
+		
+	}
+}
+
+.other {
+	background-color: $GreenBasic;
+
+	.container {
+		h2 {
+			font-family: $PFDMedium;
+			font-size: 30px;
+			text-align: center;
+			color: #ffffff;
+			text-transform: uppercase;
+			padding-top: 110px;
+			padding-bottom: 44px;
+		}
+
+		.row {
+			padding-bottom: 100px;
+			.video {
+				margin-right: 75px;
+				iframe {
+					width: 560px;
+					height: 380px; 
+					border: 0;
+				}
+			}
+
+			.example {
+				margin-left: 75px;
+				p {
+					font-family: $ProxyLight;
+					font-size: 18px;
+					color: #ffffff;
+					margin-bottom: 20px;
+
+					span {
+						font-family: $ProxyBold;
+					}
+				}
+
+				.result {
+					background: #007142;
+					width: 100%;
+					padding: 30px;
+
+					.last {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.modal {
+	position: fixed;
+	width: 20%;
+	height: 20%;
+	background-color: #ffffff;
+	color: $GreenBasic;
+	font-family: $ProxyBold;
+	font-size: 20px;
+	text-transform: uppercase;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 53px 3px rgba(0,130,76,0.6);
+	display: none;
+	transition: all 1s;
+
+	p {
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	#close {
+		position: absolute; 
+		top: 2%;
+		right: 3%;
+		cursor: pointer;
+		transition: 0.5s;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
+
+@import "build/media.scss";
+
